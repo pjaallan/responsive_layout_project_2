@@ -3,32 +3,132 @@
 <html lang="en">
 
 <head>
-  <meta charset="uft-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale-1.0">
+  <title>Responsive Layout</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <title></title>
-</head>
+<script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="scripts/picturefill.min.js" async></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  </head>
 
 <body>
 
+<div class="container" id="top">
+
 <header class="main-header">
 
-<div class="main-logo">Peter Allan</div>
+<a class="main-logo" href="/">Peter Allan</a>
 	
-  <nav class="main-nav">
+  <nav>
+    <ul class="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <img
+        src="img/responsive-layout-profile.png"
+	alt="Profile Picture"
+  />
+
+<p>Hi! I am a front end web developer who loves responsive design and CSS. I recently finished a degree in front-end development at Treehouse and am excited to put all my skills to use!</p>
+
+</header><!-- End header -->
+
+<section class="main-content">
+  <h1 id="portfolio">Portfolio</h1>
+    <img
+	srcset="img/portfolio-1-large.png 1280w,
+		img/portfolio-1-medium.png 800w,
+		img/portfolio-1-small.png 500w"
+	src="img/portfolio-1-large.png"
+	alt="Marketing Page"
+    />
+
+  <h2>Marketing Page</h2>
+    <p>This project shows the front page of a marketing website meant for a specific business I&#39;m interested in.</p>
+
+    <img 
+	src="img/portfolio-2.png"
+	alt="Search Page"
+    />
+  <h2>Search Page</h2>
+    <p>This project searches through specific database to find information that the user is trying to look up.</p>
+
+
+    <img 
+	src="img/portfolio-3.png"
+	alt="Travel App"
+    />
+  <h2>Travel App</h2>
+    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+
+   <img 
+	src="img/portfolio-6.png"
+	alt="Favorite Spots"
+    />
+  <h2>Map of Favotite Spots</h2>
+    <p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it-yourself walking tour.</p>
+
+    <img 
+	src="img/portfolio-5.png"
+	alt="Photo Gallery"
+    />
+  <h2>Photo Gallery</h2>
+    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate though photos.</p>
+
+   <img 
+	src="img/portfolio-4.png"
+	alt="Calculator"
+    />
+  <h2>Calculator</h2>
+    <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+
+
+
+
+</section>
+
+<footer class="footer">
+
+  <div class="contact">
+
+  <h3 id="contact">Contact</h3>
+
+    <p>If you&#39;re interested in chatting or want more information about what I&#39;ve been working on, I&#39;d love to hear from you!</p>
+
+    <p>Phone: <strong>01903 201 909</strong>
+
+    <p>Email <strong>peter.allan@border-control.co.uk</strong>
+
+  </div>
+
+  <div class="footer-nav">
     <ul>
       <li>Home</li>
       <li>Portfolio</li>
       <li>Contact</li>
     </ul>
-  </nav>
+  </div>
 
-</header>
+  <div>
+    <ul class="footer-menu">
+	<li>Peter Allan</li>
+	<li><a href="#top">Back to Top</a></li>
+    </ul>
 
-<footer class="footer">
 
-</footer>
+  </div>
+
+</footer><!-- End footer -->
+
+</div><!-- End container -->
 
 </body>
 

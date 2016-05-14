@@ -1,11 +1,117 @@
-*******************
- Main Styles 
-*******************
+* {
+	box-sizing: border-box;
+}
+
+/* ------------------
+ Main Layout Styles 
+--------------------- */
+.container {
+	font-family: 'Roboto', sans-serif;
+	color: #666;
+}
+.main-header {
+	padding: .725em;
+	background-color: #f5f5f5;
+	text-align: center;
+}
+.main-logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 2em;
+	color: #444;
+}
+.main-nav {	
+	display: block;
+	text-align: center;
+	padding: 0.5em 0;		
+}
+.main-nav li {
+	margin-bottom: 5px;	
+}
+.main-nav a {
+	display: block;
+	padding: 0.5em;
+	font-size: 1.1em;
+	background-color: #fff;
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.main-nav a:hover {
+	color: red;
+	background-color: #aaa;
+}
+.main-content {
+	padding-top: 2em;
+	padding-left: 0.5em;
+	padding-bottom: 3em;
+	padding-right: 0.5em;
+	text-align: center;	
+}
+.main-content p {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+.footer {
+	background-color: #f5f5f5;
+	text-align: center;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	
+}
+.contact {
+	padding: 3em 1em;
+	border-bottom: 1px #bbb solid;
+}
+.footer-nav {
+	display: none;
+}
+.footer-menu {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 2em 1em 2em 1em;
+	font-weight: 700;
+}
+.footer-menu a {
+	color: #666;
+	text-decoration: none;
+	padding: 1em;
+}
+.footer
+	
 
 
+/* ----------------
 
+------------------- */
+.container h1, h2 {
+	text-align: center;
+}
+a:hover {
+	color: green;
+	background-color: #aaa;
+}
 
+/* -----------------
+Image Styles
+-------------------- */
 
-*******************
+.main-header img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+	max-width: 80%;	
+}
+.main-content img {
+	max-width: 100%;
+	margin-top: 1em;	
+}
+
+/* -----------------
 Media Sytles
-*******************
+-------------------- */
