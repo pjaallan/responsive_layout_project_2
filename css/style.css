@@ -19,6 +19,9 @@ main-header,
 	background-color: #f5f5f5;
 	text-align: center;
 }
+.main-header p {
+	line-height: 1.5em;
+}
 .main-logo {
 	align-self: center;
 	text-decoration: none;
@@ -129,9 +132,21 @@ Two Column Layout
 @media (min-width: 769px) {
 [class^="column-"] {	
 }
+.main-header img {
+	float: right;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+.main-header p {
+	padding-top: 1em;
+	padding-left: 1em;
+}
 .main-nav {
 	flex-direction: row;
 	justify-content: center;
+}
+.main-nav a {
+	background-color: #f5f5f5;
 }
 .container {	
 	margin: auto;
@@ -143,6 +158,10 @@ Two Column Layout
 }
 .column:nth-child(2n) {
 	clear: left;
+}
+.footer-nav {
+	display: flex;
+	flex-direction: row;
 }
 
 
