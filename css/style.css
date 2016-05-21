@@ -65,26 +65,29 @@ main-header,
 	text-align: center;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
-	
 }
 .contact {
 	padding: 3em 1em;
 	border-bottom: 1px #bbb solid;
 }
 .footer-nav {
-	display: none;
+	float: right;
 }
 .footer-menu {
-	display: flex;
-	justify-content: space-between;
+	float: left;
+}
+.footer-nav, .footer-menu {
+	display: block;
 	margin: 0;
 	padding: 2em 1em 2em 1em;
 	font-weight: 700;
 }
-.footer-menu a {
+.footer-li {
+	display: none;
+}
+.footer-menu, .footer-nav a {
 	color: #666;
 	text-decoration: none;
-	padding: 1em;
 }
 .clearfix:after {
 	content: "";
