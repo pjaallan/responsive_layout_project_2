@@ -85,6 +85,9 @@ main-header,
 .footer-li {
 	display: none;
 }
+.footer-nav a {
+	padding: 1em;
+}
 .footer-menu, .footer-nav a {
 	color: #666;
 	text-decoration: none;
@@ -165,6 +168,12 @@ Two Column Layout
 .footer-nav {
 	display: flex;
 	flex-direction: row;
+}
+.footer-back {
+	display: none;
+}
+.footer-li {
+	display: block;
 }
 
 
