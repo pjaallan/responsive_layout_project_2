@@ -40,6 +40,7 @@ main-header,
 	display: block;
 	padding: 0.5em;
 	font-size: 1.1em;
+	font-weight: 700;
 	background-color: #fff;
 	color: #444;
 	text-decoration: none;
@@ -81,6 +82,10 @@ main-header,
 	margin: 0;
 	padding: 2em 1em 2em 1em;
 	font-weight: 700;
+}
+.contact-p {
+	padding-top:1em;
+	padding-bottom: 1em;
 }
 .footer-li {
 	display: none;
@@ -165,6 +170,13 @@ Two Column Layout
 .column:nth-child(2n) {
 	clear: left;
 }
+.footer {
+	padding-bottom: 2em;
+}
+.contact {
+	padding-left: 15%;
+	padding-right: 15%;
+}
 .footer-nav {
 	display: flex;
 	flex-direction: row;
@@ -184,12 +196,15 @@ Three Column Layout
 -------------------- */
 
 @media (min-width: 1024px) {
-.main-content {
+
+.container {
 	max-width: 1024px;
-	margin: auto;
 }
 .column {
 	width: calc(100% / 12 * 4);
 	float: left;	
+}
+.column:nth-child(2n) {
+	clear: right;
 }	
 } /* End Media Quiery */
