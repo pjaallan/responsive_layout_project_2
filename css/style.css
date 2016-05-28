@@ -14,13 +14,15 @@ main-header,
 	display: flex;
 	flex-direction: column;
 }
-.main-header {
+.main-header, .header-profile {
 	padding: 0.725em 0.725em 2em;
 	background-color: #f5f5f5;
 	text-align: center;
 }
-.main-header p {
+.header-profile p {
 	line-height: 1.5em;
+	font-size: large;
+	padding: 1em;
 }
 .main-logo {
 	align-self: center;
@@ -28,6 +30,7 @@ main-header,
 	font-weight: 700;
 	font-size: 2em;
 	color: #444;
+	padding: 0.5em;
 }
 .main-nav {	
 	text-align: center;
@@ -46,15 +49,11 @@ main-header,
 	text-decoration: none;
 	text-transform: uppercase;
 }
-.main-nav a:hover {
-	color: red;
-	background-color: #aaa;
-}
 .main-content {
 	padding-top: 2em;
-	padding-left: 0.5em;
+	padding-left: 1em;
 	padding-bottom: 3em;
-	padding-right: 0.5em;
+	padding-right: 1em;
 	text-align: center;	
 }
 .main-content p {
@@ -111,7 +110,7 @@ main-header,
 	text-align: center;
 }
 a:hover {
-	color: green;
+	color: #fff;
 	background-color: #aaa;
 }
 
@@ -119,12 +118,11 @@ a:hover {
 Image Styles
 -------------------- */
 
-.main-header img {
+.header-profile img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 1em;
-	padding-bottom: 1em;	
+	padding: 1em 0.5em;	
 	max-width: 80%;	
 }
 .main-content img {
@@ -133,7 +131,7 @@ Image Styles
 }
 
 /* -----------------
-Media Sytles
+Media Query Sytles
 -------------------- */
 
 /* -----------------
@@ -143,24 +141,37 @@ Two Column Layout
 @media (min-width: 769px) {
 [class^="column-"] {	
 }
-.main-header img {
-	float: right;
-	margin-left: 1em;
-	margin-right: 1em;
+.container {	
+	margin: auto;
 }
-.main-header p {
-	padding-top: 1em;
+.main-header {
+	padding-top: 2em;
+}
+.header-profile {
 	padding-left: 1em;
+	padding-right: 1em;	
+}
+.header-profile p {
+	float: left;
+	width: calc(100% / 12 * 7);
+	text-align: justify;
+	margin: 0;
+}
+.header-profile img {
+	float: right;
+	width: calc(100% / 12 * 5);
 }
 .main-nav {
 	flex-direction: row;
 	justify-content: center;
 }
 .main-nav a {
-	background-color: #f5f5f5;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	background-color: transparent;
 }
-.container {	
-	margin: auto;
+.main-nav a:hover {
+	background-color: #aaa;
 }
 .column {
 	width: calc(100% / 12 * 6);
@@ -189,16 +200,37 @@ Two Column Layout
 }
 
 
-} /* End Media Quiery */
+} /* End Two Column Layout */
 
 /* -----------------
 Three Column Layout
 -------------------- */
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
 
 .container {
-	max-width: 1100px;
+	max-width: 1200px;
+	background-color: #f5f5f5;
+}
+.main-header {
+	display: flex;
+	flex-direction: row;
+}
+.main-header, .header-profile {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+.main-logo {
+	margin-right: auto;
+}
+.main-nav {
+	align-self: center;
+}
+
+.main-content {
+	margin-left: 2em;
+	margin-right: 2em;
+	background-color: #fff;
 }
 .column:nth-of-type(2n+1) {
 	clear: none;
@@ -209,9 +241,9 @@ Three Column Layout
 }
 .column:nth-of-type(3n+1) {
 	clear: left;
-	border: 1px solid red;
+}
+.footer {
+	padding-bottom: 0;
 }
 
-
-	
-} /* End Media Quiery */
+} /* End Three Column Layout */
