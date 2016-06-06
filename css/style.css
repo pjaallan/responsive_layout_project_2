@@ -138,7 +138,7 @@ Media Query Sytles
 Two Column Layout
 -------------------- */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 [class^="column-"] {	
 }
 .container {	
@@ -206,7 +206,7 @@ Two Column Layout
 Three Column Layout
 -------------------- */
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 
 .container {
 	max-width: 1200px;
