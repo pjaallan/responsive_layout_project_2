@@ -142,9 +142,9 @@ Image Styles
 }
 
 /* 
---------------------
+*************
 Media Queries
---------------------
+*************
 
 Two Column Layout
 --------------------
@@ -173,10 +173,14 @@ Two Column Layout
 	float: right;
 	width: calc(100% / 12 * 5);
 	padding: 1em 4em;
+	box-shadow: 5px 5px 10px;
 }
 .main-nav {
 	flex-direction: row;
 	justify-content: center;
+}
+.main-nav li {
+	box-shadow: 3px 3px 5px;
 }
 .main-nav a {
 	margin-left: 0.5em;
@@ -185,6 +189,9 @@ Two Column Layout
 }
 .main-nav a:hover {
 	background-color: #aaa;
+}
+.main-content {
+	box-shadow: 5px 5px 10px;
 }
 .column {
 	width: calc(100% / 12 * 6);
@@ -200,6 +207,7 @@ Two Column Layout
 .contact {
 	padding-left: 15%;
 	padding-right: 15%;
+	margin-top: 15px;
 }
 .footer-nav {
 	display: flex;
