@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;
 }
+  
 
 /* ------------------
  Main Layout Styles 
@@ -9,7 +10,7 @@
 	font-family: 'Roboto', sans-serif;
 	color: #666;
 }
-main-header,
+.main-header,
 .main-nav {
 	display: flex;
 	flex-direction: column;
@@ -23,6 +24,17 @@ main-header,
 	line-height: 1.5em;
 	font-size: large;
 	padding: 1em;
+}
+.profile-image-container {
+	border: solid 1px #ccc;
+	width: 80%;
+	background-color: #ddd;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 5%;
+	padding-bottom: 5%;	
 }
 .main-logo {
 	align-self: center;
@@ -118,12 +130,10 @@ a:hover {
 Image Styles
 -------------------- */
 
-.header-profile img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 1em 0.5em;	
-	max-width: 80%;	
+.header-profile img {	
+	border: solid 1px #bbb;
+	width: 80%;	
+	border-radius: 50%;	
 }
 .main-content img {
 	max-width: 100%;
@@ -139,8 +149,7 @@ Two Column Layout
 -------------------- */
 
 @media (min-width: 768px) {
-[class^="column-"] {	
-}
+
 .container {	
 	margin: auto;
 }
@@ -153,13 +162,15 @@ Two Column Layout
 }
 .header-profile p {
 	float: left;
-	width: calc(100% / 12 * 7);
+	width: calc(100% / 12 * 6.75);
 	text-align: justify;
 	margin: 0;
+	padding-top: 0;
 }
-.header-profile img {
+.profile-image-container {
 	float: right;
 	width: calc(100% / 12 * 5);
+	padding: 1em 4em;
 }
 .main-nav {
 	flex-direction: row;
@@ -198,9 +209,8 @@ Two Column Layout
 .footer-li {
 	display: block;
 }
-
-
 } /* End Two Column Layout */
+
 
 /* -----------------
 Three Column Layout
