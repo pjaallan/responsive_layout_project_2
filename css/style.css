@@ -175,7 +175,7 @@ Two Column Layout
 	box-shadow: 5px 5px 10px;
 }
 .main-logo {
-	text-shadow: 3px 3px 10px;
+	text-shadow: 5px 5px 10px;
 }
 .main-nav {
 	flex-direction: row;
@@ -183,7 +183,7 @@ Two Column Layout
 }
 .main-nav li {
 	margin-right: 0.5em;
-	box-shadow: 3px 3px 5px;
+	box-shadow: 5px 5px 10px;
 }
 .main-nav a {
 	background-color: transparent;
