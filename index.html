@@ -1,4 +1,8 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale-1.0">
   <title>Responsive Layout</title>
@@ -8,7 +12,7 @@
     // Picture element HTML5 shiv
     document.createElement( "picture" );
   </script>
-  <script src="scripts/picturefill.min.js" async=""></script>
+  <script src="scripts/picturefill.min.js" async></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
   </head>
 
@@ -18,12 +22,13 @@
 
 <header class="main-header">
 
-<a class="main-logo" href="#">Peter Allan</a>
+<a class="main-logo" href="#" >Peter Allan</a>
 	
   <nav>
     <ul class="main-nav">
       <li><a href="#">Home</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#skills">Skills</a></li>	
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -153,6 +158,118 @@
 
 </section>
 
+<section class="main-content container-two clearfix">
+
+<h1 id="skills">Skills</h1>
+
+<div class="column">
+
+    <img sizes="(min-width: 1024px) 365px,
+		(min-width: 768px) 46vw,
+		100vw"
+		srcset="img/portfolio-9-400w.png 400w,
+		 img/portfolio-9-500w.png 500w,
+		 img/portfolio-9-600w.png 600w,
+		 img/portfolio-9-700w.png 700w,
+		 img/portfolio-9-800w.png 800w"
+		 src="img/portfolio-9-800w.png"
+		 alt="HTML">
+
+  <h2>HTML</h2>
+
+    <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+
+</div>
+
+<div class="column">
+    <img sizes="(min-width: 1024px) 365px,
+		(min-width: 768px) 46vw,
+		100vw"
+		srcset="img/portfolio-12-400w.png 400w,
+		 img/portfolio-12-500w.png 500w,
+		 img/portfolio-12-600w.png 600w,
+		 img/portfolio-12-700w.png 700w,
+		 img/portfolio-12-800w.png 800w"
+		 src="img/portfolio-12-800w.png"
+		 alt="CSS">
+
+  <h2>CSS</h2>
+    <p>This project searches through specific database to find information that the user is trying to look up.</p>
+
+</div>
+
+<div class="column">
+    <img sizes="(min-width: 1024px) 365px,
+		(min-width: 768px) 46vw,
+		100vw"
+		srcset="img/portfolio-3-400w.png 400w,
+		 img/portfolio-3-500w.png 500w,
+		 img/portfolio-3-600w.png 600w,
+		 img/portfolio-3-700w.png 700w,
+		 img/portfolio-3-800w.png 800w"
+		 src="img/portfolio-3-800w.png"
+		 alt="JavaScript">
+
+  <h2>JavaScript</h2>
+    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+
+</div>
+
+<div class="column">
+
+    <img sizes="(min-width: 1024px) 365px,
+		(min-width: 768px) 46vw,
+		100vw"
+		srcset="img/portfolio-1-400w.png 400w,
+		 img/portfolio-1-500w.png 500w,
+		 img/portfolio-1-600w.png 600w,
+		 img/portfolio-1-700w.png 700w,
+		 img/portfolio-1-800w.png 800w"
+		 src="img/portfolio-1-800w.png"
+		 alt="jQuery">
+
+  <h2>jQuery</h2>
+
+    <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+
+</div>
+
+<div class="column">
+    <img sizes="(min-width: 1024px) 365px,
+		(min-width: 768px) 46vw,
+		100vw"
+		srcset="img/portfolio-2-400w.png 400w,
+		 img/portfolio-2-500w.png 500w,
+		 img/portfolio-2-600w.png 600w,
+		 img/portfolio-2-700w.png 700w,
+		 img/portfolio-2-800w.png 800w"
+		 src="img/portfolio-2-800w.png"
+		 alt="Saas">
+
+  <h2>Saas</h2>
+    <p>This project searches through specific database to find information that the user is trying to look up.</p>
+
+</div>
+
+<div class="column">
+    <img sizes="(min-width: 1024px) 365px,
+		(min-width: 768px) 46vw,
+		100vw"
+		srcset="img/portfolio-3-400w.png 400w,
+		 img/portfolio-3-500w.png 500w,
+		 img/portfolio-3-600w.png 600w,
+		 img/portfolio-3-700w.png 700w,
+		 img/portfolio-3-800w.png 800w"
+		 src="img/portfolio-3-800w.png"
+		 alt="Video and Audio">
+
+  <h2>Video and Audio</h2>
+    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+
+</div>
+
+</section>
+
 <footer class="footer clearfix">
 
   <div class="contact">
@@ -171,6 +288,7 @@
     <ul class="footer-nav">
       <li class="footer-li"><a href="#top">Home</a></li>
       <li class="footer-li"><a href="#portfolio">Portfolio</a></li>
+      <li class="footer-li"><a href="#skills">Skills</a></li>
       <li class="footer-li"><a href="#contact">Contact</a></li>
       <li class="footer-back"><a href="#top">Back to Top</a></li>
     </ul>
@@ -186,6 +304,5 @@
 
 </div><!-- End container -->
 
-
-
-</body></html>
+</body>
+</html>

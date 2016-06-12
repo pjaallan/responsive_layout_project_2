@@ -2,7 +2,6 @@
 	box-sizing: border-box;
 }
   
-
 /* ------------------
  Main Layout Styles 
 --------------------- */
@@ -80,7 +79,7 @@
 }
 .contact {
 	padding: 3em 1em;
-	border-bottom: 1px #bbb solid;
+	border-bottom:  solid 1px #bbb;
 }
 .footer-nav {
 	float: right;
@@ -175,23 +174,25 @@ Two Column Layout
 	padding: 1em 4em;
 	box-shadow: 5px 5px 10px;
 }
+.main-logo {
+	text-shadow: 3px 3px 10px;
+}
 .main-nav {
 	flex-direction: row;
 	justify-content: center;
 }
 .main-nav li {
+	margin-right: 0.5em;
 	box-shadow: 3px 3px 5px;
 }
 .main-nav a {
-	margin-left: 0.5em;
-	margin-right: 0.5em;
 	background-color: transparent;
 }
 .main-nav a:hover {
 	background-color: #aaa;
 }
-.main-content {
-	box-shadow: 5px 5px 10px;
+.container-two {
+	border-top: solid 1px #bbb;
 }
 .column {
 	width: calc(100% / 12 * 6);
@@ -207,7 +208,6 @@ Two Column Layout
 .contact {
 	padding-left: 15%;
 	padding-right: 15%;
-	margin-top: 15px;
 }
 .footer-nav {
 	display: flex;
@@ -247,11 +247,15 @@ Three Column Layout
 .main-nav {
 	align-self: center;
 }
-
 .main-content {
 	margin-left: 2em;
 	margin-right: 2em;
+	margin-bottom: 20px;
 	background-color: #fff;
+	box-shadow: 5px 5px 10px;
+}
+.container-two {
+	border-top: none;
 }
 .column:nth-of-type(2n+1) {
 	clear: none;
